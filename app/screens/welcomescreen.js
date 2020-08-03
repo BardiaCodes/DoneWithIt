@@ -10,6 +10,7 @@ import {
 } from "react-native";
 import AppButton from "../../components/AppButton";
 import colors from "../config/colors";
+import routes from "../navigation/routes";
 
 function WelcomeScreen(props) {
   return (
@@ -28,13 +29,13 @@ function WelcomeScreen(props) {
       <View style={styles.buttonContainer}>
         <AppButton
           color={colors.primary}
-          onPress={() => props.navigation.navigate("Login")}
+          onPress={() => props.navigation.navigate(routes.LOGIN)}
         >
           LOG IN
         </AppButton>
         <AppButton
           color={colors.secondary}
-          onPress={() => props.navigation.navigate("Register")}
+          onPress={() => props.navigation.navigate(routes.REGISTER)}
         >
           REGISTER
         </AppButton>

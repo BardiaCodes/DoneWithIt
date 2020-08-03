@@ -6,6 +6,7 @@ import { View, StyleSheet, FlatList } from "react-native";
 import colors from "../config/colors";
 import Icon from "../../components/Icon";
 import ListItemSeparator from "../../components/lists/ListItemSeparator";
+import routes from "../navigation/routes";
 
 const options = [
   {
@@ -17,7 +18,7 @@ const options = [
     title: "My Messages",
     icon: "email",
     backgroundColor: colors.secondary,
-    targetScreen: "Messages",
+    targetScreen: routes.MESSAGES,
   },
 ];
 
